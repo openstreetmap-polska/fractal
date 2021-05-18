@@ -80,12 +80,13 @@ in the future:
   however that did not work well enough
 
 Basic documentation about OSM Carto is provided on the OSM wiki page
-[Standard tile layer](https://wiki.openstreetmap.org/wiki/Standard_tile_layer). It includes such useful links as:
+[Standard tile layer](https://wiki.openstreetmap.org/wiki/Standard_tile_layer). 
+It includes such useful links as:
 
 * [Map key](https://wiki.openstreetmap.org/wiki/Standard_tile_layer/Key) - this is 
-  quite big and still incomplete list of the features found in this style
-* [OpenStreetMap Carto Tutorials](https://ircama.github.io/osm-carto-tutorials/) 
-  - this is a good place to get more informations about the project
+  quite big and still incomplete list of the features found in this style 
+* [OpenStreetMap Carto Tutorials](https://ircama.github.io/osm-carto-tutorials/) -
+  this is a good place to get more informations about the project
   
 Map scalabillity issues using the most neutral properties of objects, like typical
 and relative size, are discussed in these two blog entries:
