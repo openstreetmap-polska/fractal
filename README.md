@@ -1,19 +1,19 @@
 # Fractal
 
-Fractal is rich and scalable map style based on the free data from collaborative
+Fractal is rich and scalable map style. It's based on the data model from collaborative
 mapping project [OpenStreetMap](https://www.openstreetmap.org) (OSM), using 
 [CartoCSS](https://github.com/mapbox/carto) stylesheet processor as a tool 
 for maintaining compact rendering rules and [Mapnik](https://mapnik.org/)
 as rendering backend.
 
 Fractal is general purpose, but it focuses on high zoom levels and aims to support 
-so called "micromapping". It will be probably less usable for rural and outdoor areas, 
-where almost all the objects are important and should be amplified to be visible.
-On the other hand, urban areas filled with lot of POIs should be less cluttered,
-because objects are moved to the corresponding zoom levels according to their size,
-and at the same time showing more things, because high zoom levels can fit more.
-In particular, zoom level 20 (z20) can contain a lot of useful details, not included
-in other map styles.
+so called "[micromapping](https://wiki.openstreetmap.org/wiki/Micromapping)". It will be 
+probably less usable for rural and outdoor areas, where almost all the objects are important
+and should be amplified to be visible. On the other hand, urban areas filled with lot 
+of POIs should be less cluttered, because objects are moved to the corresponding zoom 
+levels according to their size, and at the same time showing more objects, because high
+zoom levels can fit more. In particular, zoom level 20 (z20) can contain a lot of useful
+details, not included in other map styles.
 
 ![screenshot](https://raw.github.com/openstreetmap-polska/fractal/master/preview.png)
 
@@ -22,7 +22,7 @@ in other map styles.
 You need a PostGIS database populated with OpenStreetMap data along with auxillary 
 shapefiles. See [INSTALL.md](INSTALL.md). 
 
-The easiest way to start is probably to deploy a [Docker container](DOCKER.md), 
+The shortest way to start is probably to deploy a [Docker container](DOCKER.md), 
 which allows to easily preview the changes.
 
 If you want to make a production server using Fractal, look at the tutorials at
@@ -76,8 +76,8 @@ in the future:
 
 * You can look at the [changelog](CHANGELOG.md) to see what has changed in the past
 * [Release process](RELEASES.md) will be probably more relaxed
-* [Usecases](USECASES.md) were meant as a high level help for developing the style,
-  however that did not work well enough
+* [Usecases](USECASES.md) were meant as a high level framework for developing 
+  the style, however that did not work well enough
 
 Basic documentation about OSM Carto is provided on the OSM wiki page
 [Standard tile layer](https://wiki.openstreetmap.org/wiki/Standard_tile_layer). 
