@@ -70,7 +70,7 @@ project you can expect the following:
 This project started as a fork of a default OSM map style
 [OpenStreetMap Carto](https://github.com/gravitystorm/openstreetmap-carto) 
 (OSM Carto) about version 5.3.1. Fractal shares a lot of the ideas and code with it, 
-including [CC0 1.0 license](LICENSE.txt), but some of them might need rework 
+including [CC0 1.0 license](LICENSE), but some of them might need rework 
 in the future:
 
 * You can look at the [changelog](CHANGELOG.md) to see what has changed in the past
