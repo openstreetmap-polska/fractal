@@ -88,8 +88,8 @@ It includes such useful links as:
 * [OpenStreetMap Carto Tutorials](https://ircama.github.io/osm-carto-tutorials/) -
   this is a good place to get more informations about the project
   
-Map scalabillity issues using the most neutral properties of objects, like typical
-and relative size, are discussed in these two blog entries:
+Map scalabillity issues (using the most neutral properties, like typical size 
+and objects hierarchy) are discussed in these two blog entries:
 
 * [OpenStreetMap Carto - my thoughts on development (part 1)](https://www.openstreetmap.org/user/kocio/diary/44769)
 * [OpenStreetMap Carto - my thoughts on development (part 2)](https://www.openstreetmap.org/user/kocio/diary/44852)
