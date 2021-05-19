@@ -46,8 +46,8 @@ These stylesheets can be used in your own cartography projects, and are designed
 to be easily customised. They work with [Kosmtik](https://github.com/kosmtik/kosmtik)
 and also with the command-line [CartoCSS](https://github.com/mapbox/carto) processor.
 
-Currently Fractal uses "name" key for rendering names, which holds the common names 
-used on a given area. If you want to apply different language rules, check the 
+Currently text labels in Fractal are rendered using "name" field, which holds the common
+names used on a given area. If you want to apply different language rules, check the 
 [l10n data preprocessor](https://github.com/giggls/mapnik-german-l10n) from German style.
 
 # Versioning
