@@ -25,7 +25,7 @@ shapefiles. See [INSTALL.md](INSTALL.md).
 The shortest way to start is probably to deploy a [Docker container](DOCKER.md), 
 which allows to easily preview the changes.
 
-If you want to make a production server using Fractal, look at the tutorials at
+If you want to run a production server using Fractal, look at the tutorials at
 [Switch2OSM](https://switch2osm.org) and follow the instructions.
 
 ## Contributing
