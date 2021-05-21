@@ -1,4 +1,4 @@
-# OpenStreetMap Carto contribution guidelines
+# Fractal contribution guidelines
 
 ## Reporting issues
 
@@ -28,25 +28,19 @@ but to provide an overview.
 ### Previews
 
 Some changes benefit from a review over a wider area and many zooms, where static
-images might not be sufficient and a demo layer is necessary. pnorman has a server
- which can host layers and has some data from parts of the world loaded. Before
- requesting this in a pull request, make sure that it is in a stable condition.
-
-## Easy pickings
-
-Some [easy issues](https://github.com/gravitystorm/openstreetmap-carto/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) have been selected
-that are particularly suitable for new contributors to get familiar with the project's code base and the contribution process.
+images might not be sufficient and a demo layer is necessary. If you can not test it
+on your own, ask maintainers for help.
 
 ## Editing layers
 
-OpenStreetMap Carto uses a YAML file for defining layers, because it [works much
-better for big projects](https://github.com/gravitystorm/openstreetmap-carto/issues/711).
-This requires CartoCSS 0.18.0 or later. If you need JSON MML, you can generate it
-with `python -c 'import sys, yaml, json; json.dump(yaml.safe_load(sys.stdin), sys.stdout)' < project.mml > project.json`
+Fractal uses a YAML file for defining layers, because it works much
+better for big projects. This requires CartoCSS 0.18.0 or later. If you need 
+JSON MML, you can generate it with `python -c 'import sys, yaml, json; 
+json.dump(yaml.safe_load(sys.stdin), sys.stdout)' < project.mml > project.json`
 or the equivalent in a different language.
 
 [Kosmtik](https://github.com/kosmtik/kosmtik) and CartoCSS can directly load the project from
-the YAML file with `node index.js serve path/to/openstreetmap-carto/project.mml`
+the YAML file with `node index.js serve path/to/fractal/project.mml`
 
 ## CartoCSS style guidelines
 
