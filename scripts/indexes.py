@@ -54,7 +54,7 @@ def reindex_cb(table, name, function, where):
         cb(table, name, function, where)
         print('DROP INDEX planet_osm_{table}_{name}_old;\n'.format(table=table, name=name))
 
-print(('-- These are indexes for rendering performance with OpenStreetMap Carto.\n'+
+print(('-- These are indexes for rendering performance with Fractal.\n'+
       '-- This file is generated with {}\n').format(' '.join(sys.argv)))
 
 if not args.reindex:
