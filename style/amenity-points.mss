@@ -1537,7 +1537,7 @@
     marker-clip: false;
   }
 
-  [feature = 'barrier_bollard'],
+  [feature = 'barrier_bollard'][zoom >= 19]::barrier,
   [feature = 'barrier_block'],
   [feature = 'barrier_log'],
   [feature = 'barrier_turnstile'] {
