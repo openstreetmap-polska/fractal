@@ -1,4 +1,4 @@
--- These are indexes for rendering performance with OpenStreetMap Carto.
+-- These are indexes for rendering performance with Fractal.
 -- This file is generated with scripts/indexes.py
 
 CREATE INDEX planet_osm_line_ferry
