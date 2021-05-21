@@ -4,7 +4,7 @@ This file is part of Fractal and used for validating the Lua tag transforms.
 Run it with lua test.lua
 ]]
 
-require ("ractal")
+require ("fractal")
 
 --- compare two tables.
 -- @param t1 A table
