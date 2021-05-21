@@ -38,7 +38,7 @@ script:
   - diff -qu <(scripts/indexes.py) indexes.sql
   - diff -qu <(scripts/generate_road_colours.py) style/road-colors-generated.mss
   # Create the PostgreSQL tables
-  - osm2pgsql -G --hstore --style openstreetmap-carto.style --tag-transform-script openstreetmap-carto.lua -U postgres -d gis -r xml <(echo '<osm version="0.6"/>')
+  - osm2pgsql -G --hstore --style fractal.style --tag-transform-script fractal.lua -U postgres -d gis -r xml <(echo '<osm version="0.6"/>')
   # Apply the custom indexes
   - psql -1Xq -v ON_ERROR_STOP=1 -d gis -f indexes.sql
   # Test for classes in project.mml (not supported in vector tiles)
