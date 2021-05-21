@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:/openstreetmap-carto
+      - .:/fractal
     depends_on:
       - db
     ports:
@@ -31,7 +31,7 @@ services:
       context: .
       dockerfile: Dockerfile.import
     volumes:
-      - .:/openstreetmap-carto
+      - .:/fractal
     depends_on:
       - db
     environment:
