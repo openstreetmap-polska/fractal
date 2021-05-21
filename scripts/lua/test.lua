@@ -1,10 +1,10 @@
 --[[
-This file is part of OpenStreetMap Carto and used for validating the Lua tag transforms.
+This file is part of Fractal and used for validating the Lua tag transforms.
 
 Run it with lua test.lua
 ]]
 
-require ("openstreetmap-carto")
+require ("ractal")
 
 --- compare two tables.
 -- @param t1 A table
