@@ -22,8 +22,8 @@ RUN kosmtik plugins --install kosmtik-overpass-layer \
     && cp /root/.config/kosmtik.yml /tmp/.kosmtik-config.yml
 
 # Closing section
-RUN mkdir -p /openstreetmap-carto
-WORKDIR /openstreetmap-carto
+RUN mkdir -p /fractal
+WORKDIR /fractal
 
 USER 1000
 CMD sh scripts/docker-startup.sh kosmtik
