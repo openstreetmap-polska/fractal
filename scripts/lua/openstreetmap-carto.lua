@@ -1,1 +1,1 @@
-../../openstreetmap-carto.lua
+../../fractal.lua
