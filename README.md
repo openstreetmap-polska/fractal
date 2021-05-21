@@ -27,7 +27,7 @@ which allows to easily preview the changes.
 
 If you want to run a production server using Fractal, look at the tutorials at
 [Switch2OSM](https://switch2osm.org) and follow the instructions. Just remember to
-change the repository address and name to "fractal" when needed.
+change the repository address and directory name when needed.
 
 ## Contributing
 
