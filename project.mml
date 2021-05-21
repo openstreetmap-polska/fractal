@@ -1,7 +1,7 @@
 scale: 1
 metatile: 2
-name: OpenStreetMap Carto
-description: A general-purpose OpenStreetMap mapnik style, in CartoCSS
+name: Fractal
+description: Rich and scalable map style based on the OpenStreetMap data model
 bounds: &world
   - -180
   - -85.05112877980659
