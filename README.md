@@ -26,7 +26,8 @@ The shortest way to start is probably to deploy a [Docker container](DOCKER.md),
 which allows to easily preview the changes.
 
 If you want to run a production server using Fractal, look at the tutorials at
-[Switch2OSM](https://switch2osm.org) and follow the instructions.
+[Switch2OSM](https://switch2osm.org) and follow the instructions. Just remember to
+change the name to "fractal" when needed.
 
 ## Contributing
 
