@@ -47,8 +47,8 @@ EOF
   --database gis \
   --slim \
   --drop \
-  --style openstreetmap-carto.style \
-  --tag-transform-script openstreetmap-carto.lua \
+  --style fractal.style \
+  --tag-transform-script fractal.lua \
   $OSM2PGSQL_DATAFILE
 
   # Downloading needed shapefiles
