@@ -1,7 +1,7 @@
-version: '2'
+version: "2"
 services:
   kosmtik:
-    image: kosmtik:v1
+    image: fractal/kosmtik:v1
     build:
       context: .
       dockerfile: Dockerfile
@@ -15,7 +15,7 @@ services:
       - PGHOST=db
       - PGUSER=postgres
   db:
-    image: db:v1
+    image: fractal/db:v1
     build:
       context: .
       dockerfile: Dockerfile.db
@@ -26,7 +26,7 @@ services:
       - PG_WORK_MEM
       - PG_MAINTENANCE_WORK_MEM
   import:
-    image: import:v1
+    image: fractal/import:v1
     build:
       context: .
       dockerfile: Dockerfile.import
