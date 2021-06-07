@@ -18,7 +18,7 @@ If you are eager to get started here is an overview over the necessary steps.
 Read on below to get the details.
 
 * `git clone https://github.com/openstreetmap-polska/fractal.git` to clone fractal repository into a directory on your host system
-* download OpenStreetMap data in osm.pbf format to a file `data.osm.pbf` and place it within the openstreetmap-carto directory (for example some small area from [Geofabrik](https://download.geofabrik.de/))
+* download OpenStreetMap data in osm.pbf format to a file `data.osm.pbf` and place it within the fractal directory (for example some small area from [Geofabrik](https://download.geofabrik.de/))
 * If necessary, `sudo service postgresql stop` to make sure you don't have currently running a native PostgreSQL server which would conflict with Docker's PostgreSQL server.
 * `docker-compose up import` to import the data (only necessary the first time or when you change the data file)
 * `docker-compose up kosmtik` to run the style preview application
@@ -28,7 +28,7 @@ Read on below to get the details.
 
 ## Repositories
 
-Instructions above will clone main Fractal repository. To test your own changes you should [fork](https://help.github.com/articles/fork-a-repo/) gravitystorm/openstreetmap-carto repository and [clone your fork](https://help.github.com/articles/cloning-a-repository/).
+Instructions above will clone main Fractal repository. To test your own changes you should [fork](https://help.github.com/articles/fork-a-repo/) openstreetmap-polska/fractal repository and [clone your fork](https://help.github.com/articles/cloning-a-repository/).
 
 This Fractal repository needs to be a directory that is shared between your host system and the Docker virtual machine. Home directories are shared by default; if your repository is in another place you need to add this to the Docker sharing list (e.g. macOS: Docker Preferences > File Sharing; Windows: Docker Settings > Shared Drives).
 
@@ -36,7 +36,7 @@ This Fractal repository needs to be a directory that is shared between your host
 
 Fractal needs a database populated with rendering data to work. You first need a data file to import.
 It's probably easiest to grab an PBF of OSM data from [Geofabrik](https://download.geofabrik.de/).
-Once you have that file put it into the openstreetmap-carto directory and run `docker-compose up import` in the fractal directory.
+Once you have that file put it into the fractal directory and run `docker-compose up import` in the fractal directory.
 This starts the PostgreSQL container (downloads it if it not exists) and starts a container that runs [osm2pgsql](https://github.com/openstreetmap/osm2pgsql) to import the data. The container is built the first time you run that command if it not exists.
 At startup of the container the script `scripts/docker-startup.sh` is invoked which prepares the database and itself starts osm2pgsql for importing the data.
 
