@@ -1,3 +1,5 @@
+_Taken from OSM Carto, to be decided in the future if that is worth keeping._
+
 This file describes some use cases of the style sheet. For each use case, it is indicated which features we need to render because they are the subject of the use case, and which features we should render as context for the subject feature(s). Also, for each use case is indicated at what zoom level the use case is relevant.
 
 The end goal should be that for everything we render on a given zoomlevel, we have a use case that mentions that feature either as map subject or map context on that zoomlevel. We can accomplish this either by adding use cases, or removing features.
