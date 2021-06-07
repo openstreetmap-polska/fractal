@@ -67,6 +67,8 @@ project you can expect the following:
 * MAJOR: Any change the requires reloading a database or upgrading software
   dependecies will trigger a major version change.
 
+The changes are described in the [changelog](CHANGELOG.md).
+
 ## Related resources
 
 This project started as a fork of a default OSM map style
@@ -75,7 +77,6 @@ This project started as a fork of a default OSM map style
 including [CC0 1.0 license](LICENSE), but some of them might need rework 
 in the future:
 
-* You can look at the [changelog](CHANGELOG.md) to see what has changed in the past
 * [Release process](RELEASES.md) will be probably more relaxed
 * [Usecases](USECASES.md) were meant as a high level framework for developing 
   the style, however that did not work well enough
