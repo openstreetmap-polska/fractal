@@ -64,7 +64,7 @@ project you can expect the following:
   on the map, how they appear, new features added and old features removed. 
   They may rarely contain changes to assets i.e. shapefiles and fonts but will 
   not contain changes that require software or database upgrades.
-* MAJOR: Any change the requires reloading a database or upgrading software
+* MAJOR: Any change which requires reloading a database or upgrading software
   dependecies will trigger a major version change.
 
 The changes are described in the [changelog](CHANGELOG.md).
