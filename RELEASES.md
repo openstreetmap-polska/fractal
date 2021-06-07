@@ -1,3 +1,5 @@
+_Template from OSM Carto as a general guide - to be changed in the future after the release process will be mature enough._
+
 # Release process
 
 Throughout this document, replace $OLD_VERSION with the previous release and $NEW_VERSION with the next one. Versions should start with a v, e.g. `v2.40.0`.
