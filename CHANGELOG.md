@@ -1,5 +1,5 @@
 ## 1.0.0
-- General project defining and rebranding, including name and code changes
+- General project defining and rebranding, including name and code changes, however no changes in dependecies or database
 - Adding special rendering for `parking=street_side` and `parking=lane`
 - Moving `highway=traffic_signals` to z19+
 - Moving `barrier=bollard` to z19+
