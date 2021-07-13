@@ -666,8 +666,9 @@ Layer:
       table: |-
         (SELECT
             way,
-            COALESCE((
-              'highway_' || (CASE WHEN highway IN ('pedestrian', 'footway', 'service', 'platform') THEN highway END)),
+            COALESCE(
+              ('highway_' || (CASE WHEN highway IN ('pedestrian', 'footway', 'service', 'platform') THEN highway END)),
+              ('highway_area_' || (tags->'area:highway')),
               ('railway_' || (CASE WHEN (railway IN ('platform')
                               AND (tags->'location' NOT IN ('underground') OR (tags->'location') IS NULL)
                               AND (tunnel NOT IN ('yes', 'building_passage') OR tunnel IS NULL)
@@ -676,6 +677,7 @@ Layer:
             ) AS feature
           FROM planet_osm_polygon
           WHERE highway IN ('pedestrian', 'footway', 'service', 'platform')
+            OR (tags->'area:highway') in ('footway', 'pedestrian')
             OR (railway IN ('platform')
                 AND (tags->'location' NOT IN ('underground') OR (tags->'location') IS NULL)
                 AND (tunnel NOT IN ('yes', 'building_passage') OR tunnel IS NULL)
@@ -791,6 +793,7 @@ Layer:
             COALESCE(
               ('highway_' || (CASE WHEN highway IN ('pedestrian', 'footway', 'service', 'living_street',
                                                     'platform', 'services') THEN highway END)),
+              ('highway_area_' || (tags->'area:highway')),
               ('railway_' || (CASE WHEN (railway IN ('platform')
                               AND (tags->'location' NOT IN ('underground') OR (tags->'location') IS NULL)
                               AND (tunnel NOT IN ('yes', 'building_passage') OR tunnel IS NULL)
@@ -800,6 +803,7 @@ Layer:
             ) AS feature
           FROM planet_osm_polygon
           WHERE highway IN ('pedestrian', 'footway', 'service', 'living_street', 'platform', 'services')
+            OR (tags->'area:highway') in ('footway', 'pedestrian')
             OR (railway IN ('platform')
                 AND (tags->'location' NOT IN ('underground') OR (tags->'location') IS NULL)
                 AND (tunnel NOT IN ('yes', 'building_passage') OR tunnel IS NULL)

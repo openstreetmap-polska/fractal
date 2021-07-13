@@ -2684,6 +2684,8 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     }
   }
 
+  [feature = 'highway_area_footway'],
+  [feature = 'highway_area_pedestrian'],
   [feature = 'highway_footway'],
   [feature = 'highway_pedestrian'] {
     [zoom >= 15] {
@@ -2714,6 +2716,8 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     }
   }
 
+  [feature = 'highway_area_footway'],
+  [feature = 'highway_area_pedestrian'],
   [feature = 'highway_footway'],
   [feature = 'highway_pedestrian'] {
     [zoom >= 15] {
