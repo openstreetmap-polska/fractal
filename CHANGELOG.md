@@ -1,3 +1,7 @@
+## Current changes
+- Adding area:highway=footway rendering
+- Adding area:highway=pedestrian rendering
+
 ## 1.0.0
 - General project defining and rebranding, including name and code changes, however no changes in dependecies or database
 - Adding special rendering for `parking=street_side` and `parking=lane`
