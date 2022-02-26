@@ -1465,7 +1465,7 @@ Layer:
           (SELECT -- This subselect allows filtering on the feature column
               way,
               CONCAT(
-                coalesce("name:uk", name) as name,
+                name,
                 E'\n' || CONCAT( -- by doing this with a || if both the ele and height branches are null, this entire expression is null and only name is used
                   CASE
                     WHEN (tags ? 'ele') AND tags->'ele' ~ '^-?\d{1,4}(\.\d+)?$'
